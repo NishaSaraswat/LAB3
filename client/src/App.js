@@ -1,9 +1,13 @@
 import './App.css';
-
+import NavBar from './components/NavBar';
+import {routes } from './routes'
+import { useRoutes } from 'react-router';
 function App() {
+ const element = useRoutes(routes)
   return (
-    <div className="App">
-      <h1>HEllo world!</h1>
+    <div>
+      <NavBar />
+      {element}
     </div>
   );
 }
