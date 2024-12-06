@@ -17,7 +17,7 @@ export default function Home() {
             {
                 data.quotes.map(quote=>{
                     return(
-                   <blockquote key={quote.index}>
+                   <blockquote key={quote._id}>
                         <h6>{quote.name}</h6>
                         <p className="right-align">~{quote.by.firstName}</p>
                     </blockquote>
